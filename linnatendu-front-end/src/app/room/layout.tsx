@@ -1,4 +1,4 @@
-import PublicLayout from "../components/Layout/PublicLayout";
+import PublicLayout from "../../components/Layout/PublicLayout";
 
 export default function RoomLayout({ children }: { children: React.ReactNode }) {
   return (
