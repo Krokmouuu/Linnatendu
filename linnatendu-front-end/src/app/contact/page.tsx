@@ -8,7 +8,9 @@ export const metadata = {
   description: "Visite de la Love Room",
 };
 
-export default async function Room() {
+export default async function Contact() {
+  const contactPhone = process.env.NEXT_PUBLIC_CONTACT_PHONE;
+
   return (
     <>
       <Box
@@ -23,8 +25,13 @@ export default async function Room() {
           component="main"
           sx={{ mt: ["48px", "56px", "64px"], flexGrow: 1 }}
         >
-          <Container maxWidth="xl" sx={{ pt: 3, pb: 6 }}>
-            <Grid container direction={"column"} spacing={5}>
+          <Container maxWidth="xl" sx={{ pb: 6 }}>
+            <Grid
+              container
+              direction={"column"}
+              spacing={5}
+              alignContent={"center"}
+            >
               <Grid>
                 <Typography
                   align={"center"}
@@ -32,8 +39,10 @@ export default async function Room() {
                   variant="h3"
                   component={"h1"}
                 >
-                  CONTACT
+                  Envie de reserver une nuit ?
                 </Typography>
+                <Typography>Contactez nous au {contactPhone}</Typography>
+                <Typography>N'hesitez pas a nous faire savoir si vous voulez certaines decorations.</Typography>
               </Grid>
             </Grid>
           </Container>
