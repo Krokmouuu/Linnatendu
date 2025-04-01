@@ -42,7 +42,10 @@ export default async function Contact() {
                   Envie de reserver une nuit ?
                 </Typography>
                 <Typography>Contactez nous au {contactPhone}</Typography>
-                <Typography>N'hesitez pas a nous faire savoir si vous voulez certaines decorations.</Typography>
+                <Typography>
+                  N'hesitez pas a nous faire savoir si vous voulez certaines
+                  decorations.
+                </Typography>
               </Grid>
             </Grid>
           </Container>
