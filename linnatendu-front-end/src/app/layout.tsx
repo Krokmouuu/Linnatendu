@@ -1,19 +1,14 @@
 "use client";
-import type { Metadata } from "next";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
 import { StyledRoot } from "./StyledRoot";
 import NavigationBar from "@/components/NavigationBar/NavigationBar";
 import { Box } from "@mui/material";
-import { useResponsive } from "@/Hook/useResponsive";
-import { usePathname } from "next/navigation";
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const isMobile = useResponsive("down", "md");
-  const pathname = usePathname();
 
   return (
     <html lang="en">
